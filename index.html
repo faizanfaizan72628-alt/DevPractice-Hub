@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPractice Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="navbar">
+    <h1><span>Dev</span>Practice Hub</h1>
+    <P>Improve your web develpment skills</P> 
+   </header>
+   <main class="container">
+    <section class="welcome">
+        <div>
+        <h2>Welcome to DevPractice Hub👋</h2>
+        <p>Learn, practice and improve your web development skills.</p>
+</div>
+    </section>
+<section class="progress-section">
+    <h2>My Learning progress</h2>
+    <p id="progressText">0% Completed</p>
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+</section>
+<section class="learning-section">
+    <h2>My Learning Topics</h2>
+    <div class="cards">
+        <div class="card html-card">
+            <h3>HTML</h3>
+            <P>Learn the structure of websites.</P>
+            <ul>
+                <li>HTML Tags</li>
+                <li>Forms</li>
+                <li>Tables</li>
+                <li>Semantic Elements</li>
+            </ul>
+            <button onclick="completeTopic('html')"> Complete HTML</button>
+        </div>
+        <div class="card css-card">
+            <h3>CSS</h3>
+            <P>Learn styling and responsive design.</P>
+<ul>
+    <li>Flexbox</li>
+    <li>Animations</li>
+    <li>Grid</li>
+    <li>Media Queries</li>
+</ul>
+<button onclick="completeTopic('css')">Complete CSS</button>
+        </div>
+        <div class="card js-card">
+            <h3>JavaScript</h3>
+            <p>Learn Programming and logic.</p>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>DOM</li>
+                <li>Events</li>
+            </ul>
+            <button onclick="completeTopic('javascript')">Complete JavaScript</button>
+        </div>
+    </div>
+</section>
+<section class="task-section">
+    <h2>My Practice Tasks</h2>
+    <div class="task-input">
+        <input type="text" id="textInput" placeholder="Enter a learning task...">
+        <button id="addTaskBtn">Add Task</button>
+    </div>
+<ul id="taskList"></ul>
+</section>
+<section class="quiz-section">
+            <h2>Web Development Quiz</h2>
+            <div id="quizBox">
+                <p id="question"></p>
+                <div id="options"></div>
+                <p id="quizFeedback"></p>
+                <button id="nextBtn">Next Question</button>
+            </div>
+        </section>
+        <section class="notes-section">
+            <h2>My Learning Notes</h2>
+            <textarea id="notes"
+                placeholder="Write your HTML, CSS or JavaScript notes here..."></textarea>
+            <button id="saveNotesBtn">Save Notes</button>
+            <p id="notesMessage"></p>
+        </section>
+   </main>
+   <footer>
+    <p>Built by Sufyan Ali | DevPractice Hub</p>
+    <p>HTML • CSS • JavaScript</p>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
